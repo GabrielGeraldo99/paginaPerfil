@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilização do body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #8402b0;
+  color: #040404;
+}
+
+/* estilização do header */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* estilização do nav */
+nav {
+  margin-bottom: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav button {
+  background: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #e6b800;
+}
+
+/* estilização do cabeçalho do perfil */
+.profile-header {
+  margin: 1em 0;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* estilização das seções */
+.section {
+  background: #ffffff;
+  margin: 2em 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #35424a;
+}
+
+/* estilização das habilidades */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  flex: 1;
+  min-width: 25px;
+  margin: 1em;
+}
+
+.skill h3 {
+  border-bottom: 2px solid #35424a;
+  margin-bottom: 10px;
+}
+
+/* estilização do footer */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-links {
+  margin-bottom: 0.5em;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
+}
+
+/* darkTheme */
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme header,
+.dark-theme section,
+.dark-theme footer {
+  background-color: #1e1e1e;
+}
